@@ -1,0 +1,8 @@
+{
+  "name": "connected_hospital",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
