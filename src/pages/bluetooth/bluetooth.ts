@@ -1,12 +1,11 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {AlertController, IonicPage, NavController} from 'ionic-angular';
+import {AlertController, NavController} from 'ionic-angular';
 
 
 import { Items } from '../../providers/providers';
 import {BluetoothSerial} from "@ionic-native/bluetooth-serial";
 import {Observable} from "rxjs/Observable";
 
-@IonicPage()
 @Component({
   selector: 'page-hoe',
   templateUrl: 'bluetooth.html'

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { IonicPage, NavController, ToastController } from 'ionic-angular';
+import { NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers/providers';
 import { MainPage } from '../pages';
 
-@IonicPage()
+
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'

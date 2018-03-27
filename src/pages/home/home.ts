@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {Events, IonicPage, NavController} from 'ionic-angular';
+import {Events, NavController} from 'ionic-angular';
 
 
 import { Items } from '../../providers/providers';

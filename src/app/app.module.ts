@@ -1,3 +1,4 @@
+import { TabsPage } from './../pages/tabs/tabs';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +23,7 @@ import {ShareService} from "../mocks/ShareService";
 import {CompleteTestService} from "../mocks/CompleteTestService";
 import {AutoCompleteModule} from "ionic2-auto-complete";
 import {HomePage} from "../pages/home/home";
+import { LoginPage } from '../pages/login/login';
 
 
 // The translate loader needs to know where to load i18n files
@@ -48,7 +50,10 @@ export function provideSettings(storage: Storage) {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    TabsPage,
+    BluetoothPage
 
   ],
   imports: [
@@ -68,7 +73,10 @@ export function provideSettings(storage: Storage) {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    TabsPage,
+    BluetoothPage
   ],
   providers: [
     Api,
