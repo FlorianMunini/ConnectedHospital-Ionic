@@ -1,9 +1,9 @@
+import { HomePage } from './../home/home';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers/providers';
-import { MainPage } from '../pages';
 
 
 @Component({
@@ -36,10 +36,10 @@ export class LoginPage {
   doLogin() {
 
     this.user.login(this.account).subscribe((resp) => {
-      this.navCtrl.push(MainPage);
+      this.navCtrl.push(HomePage);
     }, (err) => {
 
-      this.navCtrl.push(MainPage);
+      this.navCtrl.push(HomePage);
       // Unable to log in
       let toast = this.toastCtrl.create({
         message: this.loginErrorString,
