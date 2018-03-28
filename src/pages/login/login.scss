@@ -1,45 +1,53 @@
 page-login {
 
     @import "../../assets/css/materialize.min.css";
-  
-    @font-face {
-      font-family: "ONE DAY";
-      src: url("assets/fonts/ONEDAY/ONEDAY.ttf") format('ttf');
-    }
-  
+   
   .log {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    font-family: "ONE DAY";
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Orbitron', sans-serif;
     font-size: 3rem;
     
     color: white;
   }
 
+
+  
+
   .round {
     border-radius: 25px;
     background-color: white;
     color:black;
-    font-family: "ONE DAY";
+    font-family: 'Orbitron', sans-serif;
     margin-left: auto;
     margin-right: auto;
   }
 
   .fontfam {
-    font-family: "ONE DAY";
+    font-family: 'Orbitron', sans-serif;
     font-size: 15px;
+    
   }
 
 
   // OVERRIDE
 
+  ion-title {
+    font-family: 'Orbitron', sans-serif;
 
+  }
+
+  .no-scroll .scroll-content{
+    overflow: hidden;
+    padding-bottom: 0px !important;
+  }
 
   // -----ANDROID------
     // BOUTTON SIDE MENU
     .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
       color: #FFFFFF;
+
       text-align: center;
 
   }
@@ -62,10 +70,9 @@ page-login {
   // BACKGROUND HEADER
   .toolbar-background {
     background-color: transparent;
-    box-shadow: none;
-    -webkit-box-shadow:none;
-
   }
+
+  
 
   .item-ios .item-button,
   .item-md .item-button {
@@ -88,6 +95,8 @@ page-login {
 
   ion-content{
     background: -webkit-linear-gradient(top, #000064 , #00E0F0);
+    width: 100%;
+    height: 100%;
   }
 
   .item-md.item-block .item-inner,
@@ -106,7 +115,7 @@ page-login {
 
   .item-md ion-avatar,
   .item-ios ion-avatar {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 
   button:focus {
@@ -196,6 +205,7 @@ page-login {
   input[type=number]:not(.browser-default), 
   input[type=search]:not(.browser-default), 
   textarea.materialize-textarea{
+    padding-bottom: 15px;
     border-bottom: 1px solid #000000;
   }
 

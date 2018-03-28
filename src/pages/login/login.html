@@ -1,18 +1,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Connexion</ion-title>
+    
   </ion-navbar>
 
- 
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </ion-header>
-<ion-content no-bounce>
+
+<ion-content class="no-scroll">
 
     
 
       <ion-item>
       <ion-avatar>
-        <img src="../assets/img/hopital.png">
+        <img src="assets/imgs/hopital.png">
       </ion-avatar>
       </ion-item>
     
@@ -22,32 +23,34 @@
 
 
   <ion-card>
-  <ion-card-content>
     <form (submit)="doLogin()">
-      <ion-list>
-
-          <ion-item>
-            <ion-label floating style="color:white;"><ion-icon name="md-person"></ion-icon> <span class="fontfam">Adresse mail</span></ion-label>
-            <ion-input type="email" [(ngModel)]="account.email" name="email" ></ion-input>
-          </ion-item>
+      <ion-card-content>
         
-          <ion-item>
-            <ion-label floating style="color:white;"><ion-icon name="ios-key"></ion-icon> <span class="fontfam">Password</span></ion-label>
-            <ion-input type="password" [(ngModel)]="account.password" name="password" ></ion-input>
-          </ion-item>
-          <ion-item>
-              <ion-label class="fontfam">Se souvenir de moi</ion-label>
-              <ion-checkbox checked="false"></ion-checkbox>
+          <ion-list>
+
+            <ion-item>
+              <ion-label floating style="color:white;" class="fontfam"><ion-icon name="md-person"></ion-icon> Adresse mail</ion-label>
+              <ion-input class="fontfam" type="email" [(ngModel)]="account.email" name="email" ></ion-input>
             </ion-item>
-        
+          
+            <ion-item>
+              <ion-label floating style="color:white;" class="fontfam"><ion-icon name="ios-key"></ion-icon> Password</ion-label>
+              <ion-input class="fontfam" type="password" [(ngModel)]="account.password" name="password" ></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label class="fontfam">Se souvenir de moi</ion-label>
+                <ion-checkbox checked="false"></ion-checkbox>
+            </ion-item>
+          
 
-        <ion-item>
-            <button ion-button class="round" type="submit">CONNEXION</button>
-        </ion-item>
-      </ion-list>
-      </form>
-  </ion-card-content>
-</ion-card>
+            <ion-item>
+                <button ion-button class="round" type="submit">CONNEXION</button>
+            </ion-item>
+          </ion-list>
+      
+      </ion-card-content>
+    </form>
+  </ion-card>
 
 
   <!-- <form (submit)="doLogin()">
