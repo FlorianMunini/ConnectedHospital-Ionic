@@ -1,13 +1,17 @@
 page-login {
 
     @import "../../assets/css/materialize.min.css";
+    @import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
+
+  
+
    
   .log {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Expletus Sans', cursive;
+    font-size: 3.5rem;
     
     color: white;
   }
@@ -19,13 +23,13 @@ page-login {
     border-radius: 25px;
     background-color: white;
     color:black;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Expletus Sans', cursive;
     margin-left: auto;
     margin-right: auto;
   }
 
   .fontfam {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Expletus Sans', cursive;
     font-size: 15px;
     
   }
@@ -34,7 +38,7 @@ page-login {
   // OVERRIDE
 
   ion-title {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Expletus Sans', cursive;
 
   }
 
@@ -205,8 +209,8 @@ page-login {
   input[type=number]:not(.browser-default), 
   input[type=search]:not(.browser-default), 
   textarea.materialize-textarea{
-    padding-bottom: 15px;
-    border-bottom: 1px solid #000000;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #FFFFFF;
   }
 
   .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner {

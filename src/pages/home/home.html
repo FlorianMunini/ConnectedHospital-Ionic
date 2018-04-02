@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>lolololololol</ion-title>
+    <ion-title>Données patient</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -14,7 +14,7 @@
 
     <ion-auto-complete [dataProvider]="autoComplete" [options]="{ placeholder : 'Patient' }" #patient></ion-auto-complete>
 
-    <button ion-button (click)="showPat()">Valider</button>
+    <button ion-button class="but" (click)="showPat()">RECHERCHE DU PATIENT</button>
   </form>
 
   <ion-grid>
@@ -29,6 +29,7 @@
         BPM
       </ion-col>
     </ion-row>
+
     <ion-row *ngFor="let malade of dataArrayPatient">
       <ion-col>
         {{malade.lastname}}

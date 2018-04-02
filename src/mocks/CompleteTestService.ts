@@ -1,6 +1,3 @@
-
-
-
 import {Injectable} from "@angular/core";
 import {AutoCompleteService} from "ionic2-auto-complete";
 import { of } from 'rxjs/Observable/of';

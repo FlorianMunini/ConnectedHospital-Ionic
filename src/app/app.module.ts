@@ -1,5 +1,6 @@
 import { TabsPage } from './../pages/tabs/tabs';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Camera } from '@ionic-native/camera';
@@ -53,7 +54,8 @@ export function provideSettings(storage: Storage) {
     HomePage,
     LoginPage,
     TabsPage,
-    BluetoothPage
+    BluetoothPage,
+
 
   ],
   imports: [
@@ -76,7 +78,8 @@ export function provideSettings(storage: Storage) {
     HomePage,
     LoginPage,
     TabsPage,
-    BluetoothPage
+    BluetoothPage,
+
   ],
   providers: [
     Api,
@@ -94,14 +97,9 @@ export function provideSettings(storage: Storage) {
 
 
 
-
-
-
-
-
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
   ]
 })
 export class AppModule { }

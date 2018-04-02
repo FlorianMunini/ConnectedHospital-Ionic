@@ -4,7 +4,6 @@
     
   </ion-navbar>
 
-  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </ion-header>
 
 <ion-content class="no-scroll">
@@ -18,12 +17,12 @@
       </ion-item>
     
 
-        <p class="log">Hopital connecte</p>
+        <p class="log">Hopital connecté</p>
    
 
 
   <ion-card>
-    <form (submit)="doLogin()">
+    <form (submit)="doLoginTest()">
       <ion-card-content>
         
           <ion-list>
@@ -34,7 +33,7 @@
             </ion-item>
           
             <ion-item>
-              <ion-label floating style="color:white;" class="fontfam"><ion-icon name="ios-key"></ion-icon> Password</ion-label>
+              <ion-label floating style="color:white;" class="fontfam"><ion-icon name="ios-key"></ion-icon> Mot de passe</ion-label>
               <ion-input class="fontfam" type="password" [(ngModel)]="account.password" name="password" ></ion-input>
             </ion-item>
             <ion-item>

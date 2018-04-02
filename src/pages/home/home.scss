@@ -1,3 +1,116 @@
-page-search {
+page-home {
+    ion-auto-complete {
+        margin:auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .but {
+        margin: auto;
+        display:block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: #0000a0;
+    }
+
+
+    .but.activated {
+        background-color: #000064;
+
+    }
+
+
+   // --------------------SEARCH BAR CHANGEMENTS-------------------
+
+   input:not([type]):focus:not([readonly]), 
+   input[type=text]:not(.browser-default):focus:not([readonly]), 
+   input[type=password]:not(.browser-default):focus:not([readonly]),
+   input[type=email]:not(.browser-default):focus:not([readonly]), 
+   input[type=url]:not(.browser-default):focus:not([readonly]), 
+   input[type=time]:not(.browser-default):focus:not([readonly]), 
+   input[type=date]:not(.browser-default):focus:not([readonly]), 
+   input[type=datetime]:not(.browser-default):focus:not([readonly]), 
+   input[type=datetime-local]:not(.browser-default):focus:not([readonly]), 
+   input[type=tel]:not(.browser-default):focus:not([readonly]), 
+   input[type=number]:not(.browser-default):focus:not([readonly]), 
+   input[type=search]:not(.browser-default):focus:not([readonly]), 
+   textarea.materialize-textarea:focus:not([readonly]) {
+       border-bottom: 1px solid #0000a0;
+       -webkit-box-shadow: 0 1px 0 0 #0000a0;
+       box-shadow: 0 1px 0 0 #0000a0;
+
+   }
+
+
+
+
+   // ANDROID
+   .searchbar-md .searchbar-input {
+    padding-left: 0px;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    -webkit-box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0);
+
+
+    }
+    // Petite loupe
+    .searchbar-md .searchbar-search-icon {
+        display: none;
+    }
+    // Petite croix
+    .searchbar-md .searchbar-clear-icon {
+        right: 5px;
+        
+       // padding-bottom: 30px;
+    }
+
+    // IOS
+    // Petite loupe
+    .searchbar-ios .searchbar-search-icon {
+        display: none;
+    }
+    .searchbar-ios {
+        background: none;
+    }
+
+    .searchbar-ios .searchbar-input {
+        border-radius: 2px;
+        background-color: transparent;
+
+    }
+
+    .searchbar-input {
+        width: 80%;
+
+    }
+    .searchbar-ios.searchbar-left-aligned .searchbar-input {
+        padding-left: 0px;
+        height: 45px;
+        width: 100%;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    // Petite croix
+    .searchbar-clear-icon {
+       
+    }
+
+    .searchbar-ios .searchbar-input {
+        
+        font-size: 1.6rem;
+    }
+
+
+    .searchbar-ios {
+        border-top: none;
+        border-bottom: none;
+    }
+
 
 }
